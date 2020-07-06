@@ -14,7 +14,7 @@ Advantages:
 Disadvantages:
 its not maintainable, 50 x tags
 
-### NOT INLINE:
+### Internal embedded:
 
 1. define you style tag, in that style tag you can create your css classes
 ``` css
