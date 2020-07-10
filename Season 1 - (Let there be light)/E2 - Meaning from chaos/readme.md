@@ -14,7 +14,7 @@ Advantages:
 Disadvantages:
 its not maintainable, 50 x tags
 
-### NOT INLINE:
+### Internal embedded:
 
 1. define you style tag, in that style tag you can create your css classes
 ``` css
@@ -145,3 +145,6 @@ its not maintainable, 50 x tags
     </body>
 </html>
 ```
+
+For some more information on the different types of usages of CSS, check this link out
+https://www.hostpapa.ca/knowledgebase/understanding-external-internal-inline-css-styles
