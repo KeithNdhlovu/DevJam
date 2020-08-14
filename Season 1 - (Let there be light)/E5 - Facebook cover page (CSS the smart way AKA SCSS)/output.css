@@ -1,0 +1,30 @@
+.black-title {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.description-text {
+  font-size: 12px;
+  color: grey;
+}
+
+nav {
+  font-size: 12px;
+  height: 80px;
+  width: 100%;
+}
+nav .black-title {
+  color: green;
+}
+nav .black-title p {
+  font-weight: bold;
+}
+nav .black-title p div {
+  color: blue;
+}
+nav .description-text {
+  font-size: 12px;
+  color: grey;
+}
+
+/*# sourceMappingURL=output.css.map */

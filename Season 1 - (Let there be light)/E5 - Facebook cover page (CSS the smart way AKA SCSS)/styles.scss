@@ -1,0 +1,42 @@
+
+// Define Variable
+$nav-height: 80px;
+$black: #000000;
+$general-text-size: 12px;
+
+// Basic calculations
+$button-height: calc($nav-height/2px);
+$button-width: $button-height + 300px;
+
+.black-title {
+    color: $black;
+    text-decoration: underline;
+}
+
+.description-text {
+    font-size: $general-text-size;
+    color: grey;
+}
+
+nav {
+    font-size: $general-text-size;
+    height: $nav-height;
+    width: 100%;
+
+    .black-title {
+        color: green;
+
+        p {
+            font-weight: bold;
+
+            div {
+                color: blue;
+            }
+        }
+    }
+
+    .description-text {
+        font-size: $general-text-size;
+        color: grey;
+    }
+}
