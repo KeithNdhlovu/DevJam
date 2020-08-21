@@ -1,42 +1,172 @@
-
-// Define Variable
-$nav-height: 80px;
-$black: #000000;
-$general-text-size: 12px;
-
-// Basic calculations
-$button-height: calc($nav-height/2px);
-$button-width: $button-height + 300px;
-
-.black-title {
-    color: $black;
-    text-decoration: underline;
-}
-
-.description-text {
-    font-size: $general-text-size;
-    color: grey;
-}
-
-nav {
-    font-size: $general-text-size;
-    height: $nav-height;
+html, body {
+    height: 100%;
     width: 100%;
+    margin: 0;
+    font-family: "Roboto";
+}
 
-    .black-title {
-        color: green;
+body {
 
-        p {
-            font-weight: bold;
+    &.theme {
+        &.lightgray {
+            background-color: lightgray;
+        }
+        
+        &.white {
+            background-color: white;
+        }
+    }
+}
 
-            div {
-                color: blue;
-            }
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+
+    .cover-image {
+        background-image: url(./images/cover.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+        position: relative;
+    
+        .profile-image {
+            background-image: url(./images/profile.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            position: absolute;
+            bottom: -23px;
+            left: calc(50% - 150px/2);
+            border-radius: 50%;
+        }
+    }
+    
+    .username-text {
+        padding-top: 20px;
+        font-family: inherit;
+
+        span {
+            font-weight: normal;
+            font-family: inherit;
         }
     }
 
-    .description-text {
-        font-size: $general-text-size;
-        color: grey;
+    .bio-text {
+        color: #009fff;
+        font-weight: bold;
+        font-family: inherit;
+    }
+}
+
+.gray-button {
+    background: #e8e8e8;
+    padding: 10px;
+    width: initial;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.button {
+    background: #e8e8e8;
+    padding: 10px;
+    width: initial;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.gray-button, .button {
+    &:hover {
+        background: rgb(181, 181, 181);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-right-contain {
+    float: right;
+    margin-right: 5px;
+}
+
+.ruler {
+    border: 1px solid lightgrey;
+}
+
+.tabbed-items {
+    text-align: left;
+    margin-top: 30px;
+
+    nav {
+        ul {
+            padding: 0;
+
+            a {
+                padding: 15px;
+                width: initial;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: gray;
+                font-family: inherit;
+
+                &:hover {
+                    background: #f3f3f3;
+                    border-radius: 5px;
+                }
+
+                &.active {
+                    color: #49b8fe;
+                    font-weight: bold;
+                    border-bottom: 2px solid #49b8fe;
+
+                    &:hover {
+                        border-radius: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-navigation {
+    z-index: 100;
+    height: 70px;
+    position: absolute;
+    background: white;
+    top: 0;
+    width: 100%;
+    /* -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75); */
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+        }
     }
 }
