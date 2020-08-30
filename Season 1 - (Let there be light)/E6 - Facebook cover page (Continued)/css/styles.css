@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+body.theme.lightgray {
+  background-color: lightgray;
+}
+body.theme.white {
+  background-color: white;
+}
+
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.header-container .cover-image {
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  position: relative;
+}
+.header-container .cover-image .profile-image {
+  background-image: url(../images/profile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -23px;
+  left: calc(50% - 150px/2);
+  border-radius: 50%;
+}
+.header-container .username-text {
+  padding-top: 20px;
+  font-family: inherit;
+}
+.header-container .username-text span {
+  font-weight: normal;
+  font-family: inherit;
+}
+.header-container .bio-text {
+  color: #009fff;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.gray-button {
+  background: #e8e8e8;
+  padding: 10px;
+  width: initial;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.button {
+  background: #e8e8e8;
+  padding: 10px;
+  width: initial;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.gray-button:hover, .button:hover {
+  background: #b5b5b5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pull-right-contain {
+  float: right;
+  margin-right: 5px;
+}
+
+.ruler {
+  border: 1px solid lightgrey;
+}
+
+/*# sourceMappingURL=styles.css.map */
