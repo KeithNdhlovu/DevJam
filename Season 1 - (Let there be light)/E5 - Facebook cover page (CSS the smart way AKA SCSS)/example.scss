@@ -1,0 +1,27 @@
+
+$block-one-height: 400px;
+$block-two-height: 400px;
+$block-three-height: calc($block-one-height + $block-two-height);
+$block-three-width:  calc($block-three-height / 2);
+
+.block {
+
+    &-1 {
+        height: $block-one-height;
+    }
+
+    &-2 {
+        height: $block-two-height;
+    }
+
+    &-3 {
+        // height: $block-one-height + $block-two-height;
+        height: $block-three-height;
+        width: $block-three-width;
+    }
+}
+
+.navbar-hero {
+    // height: calc($block-three-height - $block-three-width);
+    height: $block-three-height - $block-three-width;
+}

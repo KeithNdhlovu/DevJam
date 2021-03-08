@@ -1,3 +1,40 @@
+
+## OLD School
+
+```css
+block-1 {
+    height: 100px;
+}
+
+block-2 {
+    height: 400px;
+}
+
+/* Block 3  height is  the sum of the height of block 1  and 2 */
+block-3 {
+    height: 500px;
+    width: 500px/2
+}
+
+/* Height is the sum of block 1 and 2, minus the width of block 3 */
+navbar-hero {
+    height: 500px - 500px/2
+}
+```
+
+## New  kid  on the block
+
+```scss
+.block {
+    &-1{}
+}
+```
+
+
+
+
+
+
 ## Working with CSS the smart way
 
 Install SASS from here https://sass-lang.com/install

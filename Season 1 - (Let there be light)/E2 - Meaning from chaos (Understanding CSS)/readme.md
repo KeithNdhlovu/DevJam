@@ -39,6 +39,9 @@ its not maintainable, 50 x tags
         border: 1px solid black;
     }
 
+    .special-header {
+        color: red;
+    }
 </style>
 ```
 
@@ -104,6 +107,7 @@ its not maintainable, 50 x tags
     </head>
     <body>
         <div class="text-container">
+            <h1 class="special-header">Special</h1>
             <h1 class="white-text">Hello Keith Ndhlovu!</h1>
             <p class="white-text">Its new Beginning</p>
 
