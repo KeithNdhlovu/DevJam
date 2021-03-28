@@ -1,0 +1,144 @@
+html {
+  background-color: gray;
+}
+
+body {
+  margin: 0 15em;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 15px;
+}
+
+.row .col-1 {
+  width: 8.33%;
+}
+.row .col-2 {
+  width: 16.66%;
+}
+.row .col-3 {
+  width: 25%;
+}
+.row .col-4 {
+  width: 33.33%;
+}
+.row .col-5 {
+  width: 41.66%;
+}
+.row .col-6 {
+  width: 50%;
+}
+.row .col-7 {
+  width: 58.33%;
+}
+.row .col-8 {
+  width: 66.66%;
+}
+.row .col-9 {
+  width: 75%;
+}
+.row .col-10 {
+  width: 83.33%;
+}
+.row .col-11 {
+  width: 91.66%;
+}
+.row .col-12 {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  display: inline-flex;
+  position: relative;
+}
+.header .image-container {
+  height: 100%;
+  background: url(./profile.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.header .personal-information {
+  height: 100%;
+  position: relative;
+}
+.header .contact-details {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+
+.contents .row {
+  margin-top: 20px;
+  height: auto;
+}
+.contents h2, .contents h3, .contents h5, .contents h4, .contents h6 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.contents .hr-black {
+  border-bottom: 2px solid black;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.progresbar {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.progresbar .progresbar-value {
+  height: 100%;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.vertical-align {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.border-top-bottom {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+/*# sourceMappingURL=style.css.map */
